@@ -1,0 +1,13 @@
+{
+    "C_Cpp.autoAddFileAssociations": false,
+    "C_Cpp.errorSquiggles": "Disabled",
+    "git.ignoreLimitWarning": true,
+    "cmake.configureOnOpen": false,
+    "cSpell.allowCompoundWords": true,
+    "cSpell.diagnosticLevel": "Hint",
+    "cSpell.showStatus": false,
+    "cSpell.words": [
+        "rtthread"
+    ],
+    "cmake.sourceDirectory": "",
+}
