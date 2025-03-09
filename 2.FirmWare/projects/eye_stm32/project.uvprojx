@@ -513,9 +513,19 @@
               <FilePath>../../platforms/rt-thread/components/drivers/misc/pin.c</FilePath>
             </File>
             <File>
-              <FileName>serial.c</FileName>
+              <FileName>spi_core.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/components/drivers/serial/serial.c</FilePath>
+              <FilePath>..\..\platforms\rt-thread\components\drivers\spi\spi_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi_dev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\platforms\rt-thread\components\drivers\spi\spi_dev.c</FilePath>
+            </File>
+            <File>
+              <FileName>serial_v2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\platforms\rt-thread\components\drivers\serial\serial_v2.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -548,34 +558,14 @@
               <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/drv_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>drv_usart.c</FileName>
+              <FileName>drv_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/drv_usart.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Filesystem</GroupName>
-          <Files>
-            <File>
-              <FileName>dfs_file.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/components/dfs/src/dfs_file.c</FilePath>
+              <FilePath>..\..\platforms\rt-thread\bsp\stm32\libraries\HAL_Drivers\drv_spi.c</FilePath>
             </File>
             <File>
-              <FileName>dfs_posix.c</FileName>
+              <FileName>drv_usart_v2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/components/dfs/src/dfs_posix.c</FilePath>
-            </File>
-            <File>
-              <FileName>dfs_fs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/components/dfs/src/dfs_fs.c</FilePath>
-            </File>
-            <File>
-              <FileName>dfs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/components/dfs/src/dfs.c</FilePath>
+              <FilePath>..\..\platforms\rt-thread\bsp\stm32\libraries\HAL_Drivers\drv_usart_v2.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -693,11 +683,6 @@
               <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart.c</FilePath>
             </File>
             <File>
-              <FileName>stm32h7xx_hal_sram.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32h7xx_hal_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c</FilePath>
@@ -791,6 +776,11 @@
               <FileName>stm32h7xx_hal_cec.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cec.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\platforms\rt-thread\bsp\stm32\libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c</FilePath>
             </File>
           </Files>
         </Group>

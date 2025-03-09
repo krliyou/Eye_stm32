@@ -23,6 +23,12 @@
 #define RT_KSERVICE_USING_STDLIB
 /* end of kservice optimization */
 #define RT_DEBUG
+#define RT_DEBUG_COLOR
+#define RT_DEBUG_INIT_CONFIG
+#define RT_DEBUG_INIT 1
+#define RT_DEBUG_MODULE_CONFIG
+#define RT_DEBUG_MODULE 1
+
 
 /* Inter-Thread communication */
 
@@ -46,7 +52,7 @@
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 128
-#define RT_CONSOLE_DEVICE_NAME "uart"
+#define RT_CONSOLE_DEVICE_NAME "uart4"
 /* end of Kernel Device Object */
 #define RT_VER_NUM 0x40101
 /* end of RT-Thread Kernel */
@@ -74,21 +80,16 @@
 #define MSH_USING_BUILT_IN_COMMANDS
 #define FINSH_USING_DESCRIPTION
 #define FINSH_ARG_MAX 10
-#define RT_USING_DFS
-#define DFS_USING_POSIX
-#define DFS_USING_WORKDIR
-#define DFS_FILESYSTEMS_MAX 4
-#define DFS_FILESYSTEM_TYPES_MAX 4
-#define DFS_FD_MAX 16
+
 
 /* Device Drivers */
 
 #define RT_USING_DEVICE_IPC
 #define RT_USING_SERIAL
-#define RT_USING_SERIAL_V1
+#define RT_USING_SERIAL_V2
 #define RT_SERIAL_USING_DMA
-#define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
+#define RT_USING_SPI
 
 /* Using USB */
 
@@ -164,6 +165,8 @@
 #define BSP_USING_UART4
 #define BSP_UART4_RX_BUFSIZE 256
 #define BSP_UART4_TX_BUFSIZE 0
+#define BSP_USING_SPI
+#define BSP_USING_SPI2
 /* end of On-chip Peripheral Drivers */
 
 /* External Libraries */
