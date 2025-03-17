@@ -11,14 +11,14 @@
 
 static struct rt_spi_device *spi_dev_lcd;
 
-static void lcd_write_data(rt_uint8_t dat)
+void lcd_write_data(const rt_uint8_t date)
 {
     rt_uint8_t i;
     rt_size_t len;
 
     rt_pin_write(LCD_CS_PIN, PIN_LOW);
    
-    len = rt_spi_send(spi_dev_lcd, &dat, 1);
+    len = rt_spi_send(spi_dev_lcd, &date, 1);
 
     if (len != 1)
     {
@@ -32,7 +32,7 @@ static void lcd_write_data(rt_uint8_t dat)
     rt_pin_write(LCD_CS_PIN, PIN_HIGH);
 }
 
-void lcd_write_data16(rt_uint16_t date)
+void lcd_write_data16(const rt_uint16_t date)
 {
     lcd_write_data(date >> 8);
     lcd_write_data(date);

@@ -45,7 +45,7 @@ void lcd_address_set(rt_uint16_t x1, rt_uint16_t y1, rt_uint16_t x2, rt_uint16_t
 
 void lcd_write_data(const rt_uint8_t date);
 
-void lcd_write_data16(rt_uint16_t date);
+void lcd_write_data16(const rt_uint16_t date);
 
 void lcd_write_cmd(const rt_uint8_t dat);
 
