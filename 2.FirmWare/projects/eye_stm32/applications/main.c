@@ -14,21 +14,15 @@
 #include "drv_gpio.h"
 #include "uncannyeyes.h"
 
-#define LED_PIN GET_PIN(I, 8)
-
 int main(void)
 {
-    rt_uint32_t count = 1;
+    setup();
 
-    rt_pin_mode(LED_PIN, PIN_MODE_OUTPUT);
-		
-		setup();
-
-    while(count++)
+    while(1)
     {
-			loop();
+        loop();
     }
-    
+
     return RT_EOK;
 }
 
