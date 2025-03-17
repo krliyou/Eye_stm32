@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>RT_USING_LIBC, STM32H750xx, USE_HAL_DRIVER, __RTTHREAD__, RT_USING_ARM_LIBC, __STDC_LIMIT_MACROS, __CLK_TCK=RT_TICK_PER_SECOND</Define>
               <Undefine></Undefine>
-              <IncludePath>applications;../../platforms/rt-thread/components/libc/compilers/common/include;../../platforms/rt-thread/components/libc/compilers/common/extension;../../platforms/rt-thread/components/libc/compilers/common/extension/fcntl/octal;../../platforms/rt-thread/libcpu/arm/common;../../platforms/rt-thread/libcpu/arm/cortex-m7;../../platforms/rt-thread/components/drivers/include;../../platforms/rt-thread/components/drivers/include;../../platforms/rt-thread/components/drivers/include;board;board/CubeMX_Config/Core/Inc;board/port;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/config;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/CMSIS/Include;../../platforms/rt-thread/components/dfs/include;../../platforms/rt-thread/components/finsh;../../src;../../src/include;.;../../platforms/rt-thread/include;../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Inc;../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Include;../../platforms/rt-thread/components/libc/posix/ipc;../../platforms/rt-thread/components/libc/posix/io/stdio;../../platforms/rt-thread/components/libc/posix/io/poll</IncludePath>
+              <IncludePath>applications;../../platforms/rt-thread/components/libc/compilers/common/include;../../platforms/rt-thread/components/libc/compilers/common/extension;../../platforms/rt-thread/components/libc/compilers/common/extension/fcntl/octal;../../platforms/rt-thread/libcpu/arm/common;../../platforms/rt-thread/libcpu/arm/cortex-m7;../../platforms/rt-thread/components/drivers/include;../../platforms/rt-thread/components/drivers/include;../../platforms/rt-thread/components/drivers/include;board;board/CubeMX_Config/Core/Inc;board/port;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/config;../../platforms/rt-thread/bsp/stm32/libraries/HAL_Drivers/CMSIS/Include;../../platforms/rt-thread/components/dfs/include;../../platforms/rt-thread/components/finsh;../../src;../../src/include;.;../../platforms/rt-thread/include;../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/STM32H7xx_HAL_Driver/Inc;../../platforms/rt-thread/bsp/stm32/libraries/STM32H7xx_HAL/CMSIS/Device/ST/STM32H7xx/Include;../../platforms/rt-thread/components/libc/posix/ipc;../../platforms/rt-thread/components/libc/posix/io/stdio;../../platforms/rt-thread/components/libc/posix/io/poll;..\..\src\drivers\gc9a01;..\..\src\modules\eyes</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -567,6 +567,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\platforms\rt-thread\bsp\stm32\libraries\HAL_Drivers\drv_usart_v2.c</FilePath>
             </File>
+            <File>
+              <FileName>drv_gc9a01.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\drivers\gc9a01\drv_gc9a01.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -781,6 +786,16 @@
               <FileName>stm32h7xx_hal_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\platforms\rt-thread\bsp\stm32\libraries\STM32H7xx_HAL\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Modules</GroupName>
+          <Files>
+            <File>
+              <FileName>uncannyeyes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\modules\eyes\uncannyeyes.c</FilePath>
             </File>
           </Files>
         </Group>
